@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Ceviche One|Caveat|Calistoga:300,400,500,600,700,800,900&effect=neon&display=swap');
+#welcome{
+    font-family: 'Calistoga';
+    font-size: 5em;
+    color: white;
+    text-shadow: purple 0 0 40px;
+}
+
+#smart{
+    font-family: 'Ceviche One';
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: purple 0 0 20px;
+}
+
+#tombol{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #82AAE3;
+    padding: 5px 20px;
+    border-radius: 8px;
+    color: #000;
+    transition: .5s;
+}
+
+#tombol:hover{
+    background-color: #2D033B;
+    color: #82AAE3;
+    transition: .5s;
+    border-bottom: #82AAE3 solid 2px;
+    box-shadow: #82AAE3 0 0 120px;
+}
+
+#tombol2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #82AAE3;
+    padding: 5px 20px;
+    border-radius: 8px;
+    color: #000;
+    transition: .5s;
+}
+
+#tombol2:hover{
+    background-color: #2D033B;
+    color: #82AAE3;
+    transition: .5s;
+    border-bottom: #82AAE3 solid 2px;
+    box-shadow: #82AAE3 0 0 120px;
+}
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(42, 0, 39) 3%, rgb(2, 3, 19) 38%, rgb(10, 22, 52) 68%, rgb(7, 0, 22) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgba(4, 0, 108, 0.25);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #welcome{
+        font-size: 3em;
+    }
+
+    #gmbr{
+        width: 100%;
+    }
+
+    #atasbtn{
+        font-size: smaller;
+    }
+
+    #tombol, #tombol2{
+        padding: 2px 10px;
+    }
+}
