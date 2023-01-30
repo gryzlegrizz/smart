@@ -1,0 +1,53 @@
+#nav-items:hover{
+    background-color: #202020;
+    border-bottom: #82AAE3 2px solid;
+}
+
+#nav-profile:hover{
+    background-color: #202020;
+    border-bottom: #ddd 2px solid;
+}
+
+#nav-logout:hover{
+    background-color: #202020;
+    border-bottom: red 2px solid;
+}
+
+#nav-items a, #nav-profile a, #nav-logout a{
+    font-size: large;
+    color: #fff;
+}
+
+#nav-items a:hover{
+    color: #82AAE3;
+}
+#nav-profile a:hover{
+    color: #ddd;
+}
+#nav-logout a:hover{
+    color: red;
+}
+
+nav{
+    position: sticky;
+}
+
+p{
+    margin: 0;
+    font-size: medium;
+}
+
+
+@media only screen and (max-width: 1000px){
+    #logo{
+        width: 10%;
+        margin: 0;
+        padding: 0;
+    }
+
+    p{
+        display: none;
+    }
+
+}
+
